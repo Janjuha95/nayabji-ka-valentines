@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ Letter for Nayab ♡</p>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+      <div class="letter-window">
+        <h1 id="letter-title">will thou be my valentine dearest?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Screen (shown after "Yes") -->
+    <div id="photo-screen">
+      <div id="photo-inner">
+        <h1 class="photo-title">Yippeeee! ♡</h1>
+
+        <div class="photo-frame">
+          <!-- REPLACE with your photo -->
+          <img src="photo.jpg" alt="Us" id="main-photo" />
+        </div>
+
+        <button id="poem-btn">
+          <span>click for surprise</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Poem Screen (fade to black overlay) -->
+    <div id="poem-overlay">
+      <div id="poem-close">&times;</div>
+      <div id="poem-content">
+        <div id="poem-text"></div>
+        <span id="poem-cursor">|</span>
+      </div>
+    </div>
+
+    <!-- Video Screen -->
+    <div id="video-screen">
+      <video id="surprise-video" playsinline>
+        <!-- REPLACE with your video file -->
+        <source src="xyz.mov" type="video/mp4" />
+        Your browser does not support video.
+      </video>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
